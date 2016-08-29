@@ -1,14 +1,3 @@
-//require('babel-polyfill');
-
-/*
-const MailAdapter = require('parse-server/lib/Adapters/Email/MailAdapter');
-const AmazonSES = require('amazon-ses-mailer');
-const template = require('lodash.template');
-const co = require('co');
-const fs = require('fs');
-const path = require('path');
-*/
-
 import { MailAdapter } from 'parse-server/lib/Adapters/Email/MailAdapter';
 import AmazonSES from 'amazon-ses-mailer';
 import template from 'lodash.template';
@@ -160,7 +149,7 @@ class AmazonSESAdapter extends MailAdapter {
       }
 
       return {
-        from: this.fromAddress,
+        from: message.from,
         to: [message.to],
         subject: message.subject,
         body: {
@@ -170,8 +159,8 @@ class AmazonSESAdapter extends MailAdapter {
       };
 
     }).then(payload => {
-      return new Promise(function(resolve, reject) {
-        ses.send(payload, (error, data) => {
+      return new Promise((resolve, reject) => {
+        this.ses.send(payload, (error, data) => {
           if (error) reject(error);
           resolve(data);
         });

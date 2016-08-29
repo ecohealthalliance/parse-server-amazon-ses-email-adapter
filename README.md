@@ -1,4 +1,4 @@
-# Parse Server Amazon SES Email Adapter
+# Parse Server Amazon SES Email Adapter [![CircleCI](https://circleci.com/gh/ecohealthalliance/parse-server-amazon-ses-email-adapter.svg?style=svg)](https://circleci.com/gh/ecohealthalliance/parse-server-amazon-ses-email-adapter)
 Used to send Parse Server emails with Amazon SES.
 (based on [`parse-server-mailgun`](https://github.com/sebsylvester/parse-server-mailgun))
 

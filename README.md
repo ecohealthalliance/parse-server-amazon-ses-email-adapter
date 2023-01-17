@@ -1,4 +1,4 @@
-[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
+[![Project Status: Unsupported – The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.](https://www.repostatus.org/badges/latest/unsupported.svg)](https://www.repostatus.org/#unsupported)
 
 # Parse Server Amazon SES Email Adapter [![CircleCI](https://circleci.com/gh/ecohealthalliance/parse-server-amazon-ses-email-adapter.svg?style=svg)](https://circleci.com/gh/ecohealthalliance/parse-server-amazon-ses-email-adapter)
 Used to send Parse Server emails with Amazon SES.
